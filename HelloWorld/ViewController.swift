@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var myLabel: UILabel!
+    
+    
+    @IBAction func buttonClicked(_ sender: Any) {
+        myLabel.text = "Helloworld"
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        myLabel.text = "Test"
     }
 
     override func didReceiveMemoryWarning() {
